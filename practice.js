@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me = {
+  name: "Deniz Kaplan",
+  age: 26
+}
+//alert(me.name);
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +30,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: "Glass Animals",
+  food: "Szechuan",
+  person: "Leyla",
+  book: "A Little Life",
+  movie: "Idk",
+  holiday: "Fourth of July"
+}
 
 
 /*
@@ -34,7 +45,8 @@
 */
 
 //Code here
-
+favoriteThings["car"] = "FJ Cruiser";
+favoriteThings["brand"] = "Mavi";
 
 
 /*
@@ -42,7 +54,8 @@
 */
 
 //Code here
-
+favoriteThings["food"] = "Chicken Nuggets";
+favoriteThings["book"] = "Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -56,15 +69,18 @@
 */
 
 //Code here
+var backPack = {};
 
-
+var item = "firstPocket";
+backPack[item] = "chapstick";
+backPack.color = "black";
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+//alert(backPack);
 
 
 /*
@@ -74,7 +90,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,6 +113,8 @@ var user2 = {
 */
 
 //Code Here
+user2["name"]= "Tyler S. McGinnis";
+user2["email"]= "tyler.mcginnis@devmounta.in";
 
 
 
@@ -109,6 +127,7 @@ var user2 = {
 */
 
 //Code Here
+var methodCollection = {};
 
 
 
@@ -118,6 +137,8 @@ var user2 = {
 */
 
 //Code Here
+methodCollection["alertHello"] = () => alert("hello");
+methodCollection["logHello"] = () => console.log("hello");
 
 
 
@@ -126,7 +147,8 @@ var user2 = {
 */
 
 //Code Here
-
+//methodCollection.alertHello();
+//methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -137,7 +159,13 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson(name, birthday, ssn){
+  return {
+    name: name,
+    birthday:  birthday,
+    ssn: ssn
+  }
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -148,5 +176,11 @@ var user2 = {
 */
 
 //Code Here
-
+function makeCard(cardNumber, expirationDate, securityCode){
+  return { 
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+}
 
